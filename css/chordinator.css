@@ -54,6 +54,9 @@ body {
     border-radius: 2%;
     padding: 20px;
     margin-top: 1%;
+    -webkit-box-shadow: 0px 10px 20px -4px rgba(69,69,69,0.61);
+    -moz-box-shadow: 0px 10px 20px -4px rgba(69,69,69,0.61);
+    box-shadow: 0px 10px 20px -4px rgba(69,69,69,0.61);
 }
 
 #title {
