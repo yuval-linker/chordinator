@@ -1,5 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Satisfy&display=swap');
 
 
 /* CSS by Joe Liang */
@@ -83,4 +83,35 @@ body {
 .content-side {
     position: relative;
     flex: 0 0 2%;
+}
+
+#buttons {
+    text-align: center;
+    padding-bottom: 5%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#buttons button {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size:25px;
+	font-weight:bold;
+	padding:14px 35px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffee66;
+}
+#buttons button:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+#buttons button:active {
+	position:relative;
+	top:1px;
 }
