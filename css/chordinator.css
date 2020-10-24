@@ -1,3 +1,8 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+/* CSS by Joe Liang */
 .key { position: absolute; font-family: Helvetica; font-weight: 100; font-size: 12px;
     border: 1px solid rgba(32,32,32,0.2);
     border-radius: 0px 0px 5px 5px;
@@ -17,3 +22,62 @@
 .white { background-color: #F2F2DE; color: #3008F5; z-index: 0; text-shadow: 0px 1px 1px #08E8F5; }
 
 .keyboard-holder { margin: 30px auto; height: 200px; position:relative; user-select:none; -webkit-user-select:none;-moz-user-select:none;-o-user-select:none; }
+
+/* CSS by Yuval Linker */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    margin: 0;
+}
+
+#full-page {
+    display: flex;
+    min-width: 100%;
+}
+
+.container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.center {
+    position:relative;
+    flex: 0 0 60%;
+    border: wheat 1px solid;
+    border-radius: 2%;
+    padding: 20px;
+    margin-top: 1%;
+}
+
+#title {
+    text-align: center;
+    padding: 5%;
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+}
+
+#keyboard {
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.side {
+    position: relative;
+    flex: 0 0 20%;
+    width: 20%;
+    min-width: 20%;
+}
+
+.content-side {
+    position: relative;
+    flex: 0 0 2%;
+}

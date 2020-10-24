@@ -216,6 +216,8 @@ function playKeyboard(){
 	var iKeys = 0;
 	var iWhite = 0;
 	var notes = __audioSynth._notes; //C, C#, D....A#, B
+	var left_offset = (document.getElementById("center").offsetWidth - 1120)/2;
+	console.log(left_offset);
 
 	for(var i=-2;i<=1;i++) {
 		for(var n in notes) {
@@ -225,12 +227,12 @@ function playKeyboard(){
 					thisKey.className = 'black key'; //2 classes
 					thisKey.style.width = '30px';
 					thisKey.style.height = '120px';
-					thisKey.style.left = (40 * (iWhite - 1)) + 25 + 'px';
+					thisKey.style.left = left_offset + (40 * (iWhite - 1)) + 25 + 'px';
 				} else {
 					thisKey.className = 'white key';
 					thisKey.style.width = '40px';
 					thisKey.style.height = '200px';
-					thisKey.style.left = 40 * iWhite + 'px';
+					thisKey.style.left = left_offset + 40 * iWhite + 'px';
 					iWhite++;
 				}
 
